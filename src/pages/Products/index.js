@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useHistory } from "react-router-dom";
 
 import Button from '../../components/Button';
 
@@ -9,6 +10,8 @@ export default function Products() {
     const [theAmount, setTheAmount] = useState("");
     const [description, setDescription] = useState("");
     const [product, setProduct] = useState([]);
+
+    const history = useHistory();
 
     useEffect(() => {
         const products = JSON.parse(localStorage.getItem('products'));
@@ -28,8 +31,8 @@ export default function Products() {
 
         const newProducts = JSON.stringify([...product || [], data]);
         localStorage.setItem('products', newProducts);
-
-        window.location.reload();
+        alert(`Cliente cadastrado com sucesso!`);
+        history.push("/products");
 
     }
 
