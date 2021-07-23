@@ -11,9 +11,9 @@ export default function Products() {
     const [product, setProduct] = useState([]);
 
     useEffect(() => {
-        const clients = JSON.parse(localStorage.getItem('clients'))
-        if (clients) {
-            setProduct(clients);
+        const products = JSON.parse(localStorage.getItem('products'))
+        if (products) {
+            setProduct(products);
         }
     }, [])
 
@@ -26,8 +26,8 @@ export default function Products() {
             description
         };
 
-        const newClient = JSON.stringify([...product || [], data]);
-        localStorage.setItem('clients', newClient);
+        const newProducts = JSON.stringify([...product || [], data]);
+        localStorage.setItem('products', newProducts);
         alert(`Produto cadastrado com sucesso!`);
         window.location.reload();
 
@@ -82,7 +82,7 @@ export default function Products() {
                     <tbody>
                         {product.map((prod, index) => (
                             <tr key={index}>
-                                <td>{prod.name}</td>
+                                <td>{prod.nameProduct}</td>
                                 <td>{prod.theAmount}</td>
                                 <td>{prod.description}</td>
                             </tr>
