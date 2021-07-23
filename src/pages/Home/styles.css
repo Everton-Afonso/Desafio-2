@@ -1,0 +1,38 @@
+.home-container {
+  width: 100%;
+  max-width: 1180px;
+  padding: 25px 0;
+  margin: auto;
+}
+.home-container header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-link a{
+  padding: 10px;
+}
+.baner {
+  height: 300px;
+  background: #1A1D33;
+  margin-bottom: 30px;
+}
+.baner div {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+.baner div h1{
+  padding-top: 90px;
+  padding-bottom: 20px;
+}
+.baner div h1, p {
+  color: #FFF;
+}
+.baner p {
+  font-weight: 600;
+  font-size: 20px;
+}
+.baner p span {
+  color: red;
+}

@@ -1,0 +1,22 @@
+import React from 'react';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+
+import Home from "./pages/Home";
+import Clients from "./pages/Clients";
+import Produtos from "./pages/Products";
+
+export default function Routes() {
+    return (
+        <BrowserRouter>
+            <Home />
+            <Switch>
+                <Route path="/" exact>
+                    <Clients />
+                </Route>
+                <Route path="/products">
+                    <Produtos />
+                </Route>
+            </Switch>
+        </BrowserRouter>
+    )
+}
