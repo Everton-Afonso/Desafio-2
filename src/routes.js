@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Clients from "./pages/Clients";
-import Produtos from "./pages/Products";
+import Products from "./pages/Products";
 import Footer from "./pages/Footer"
 
 export default function Routes() {
@@ -15,7 +15,7 @@ export default function Routes() {
                     <Clients />
                 </Route>
                 <Route path="/products">
-                    <Produtos />
+                    <Products />
                 </Route>
             </Switch>
             <Footer />
