@@ -5,7 +5,7 @@ import Button from '../../components/Button';
 import "./styles.css";
 
 export default function Products() {
-    const [name, setName] = useState("");
+    const [nameProduct, setNameProduct] = useState("");
     const [theAmount, setTheAmount] = useState("");
     const [description, setDescription] = useState("");
     const [product, setProduct] = useState([]);
@@ -21,7 +21,7 @@ export default function Products() {
         e.preventDefault();
 
         const data = {
-            name,
+            nameProduct,
             theAmount,
             description
         };
@@ -29,6 +29,7 @@ export default function Products() {
         const newClient = JSON.stringify([...product || [], data]);
         localStorage.setItem('clients', newClient);
         alert(`Produto cadastrado com sucesso!`);
+        window.location.reload();
 
     }
 
@@ -43,8 +44,8 @@ export default function Products() {
                         <div className="input-group">
                             <input
                                 placeholder="Nome do produto"
-                                value={name}
-                                onChange={(e) => setName(e.target.value)}
+                                value={nameProduct}
+                                onChange={(e) => setNameProduct(e.target.value)}
                                 required
                             />
                             <input
