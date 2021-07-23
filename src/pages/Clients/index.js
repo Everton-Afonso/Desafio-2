@@ -13,7 +13,7 @@ export default function Clients() {
     const [peaples, setPeaples] = useState([]);
 
     useEffect(() => {
-        const clients = JSON.parse(localStorage.getItem('clients'))
+        const clients = JSON.parse(localStorage.getItem('clients'));
         if (clients) {
             setPeaples(clients);
         }
@@ -32,6 +32,7 @@ export default function Clients() {
 
         const newClient = JSON.stringify([...peaples || [], data]);
         localStorage.setItem('clients', newClient);
+
         alert(`Cliente cadastrado com sucesso!`);
         window.location.reload();
 

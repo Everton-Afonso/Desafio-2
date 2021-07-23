@@ -11,13 +11,13 @@ export default function Products() {
     const [product, setProduct] = useState([]);
 
     useEffect(() => {
-        const products = JSON.parse(localStorage.getItem('products'))
+        const products = JSON.parse(localStorage.getItem('products'));
         if (products) {
             setProduct(products);
         }
     }, [])
 
-    function handleClientsRegister(e) {
+    function handleProductsRegister(e) {
         e.preventDefault();
 
         const data = {
@@ -28,6 +28,7 @@ export default function Products() {
 
         const newProducts = JSON.stringify([...product || [], data]);
         localStorage.setItem('products', newProducts);
+
         alert(`Produto cadastrado com sucesso!`);
         window.location.reload();
 
@@ -40,7 +41,7 @@ export default function Products() {
                     <div className="log">
                         <h1>Cadastre seus <span>produtos</span></h1>
                     </div>
-                    <form onSubmit={handleClientsRegister}>
+                    <form onSubmit={handleProductsRegister}>
                         <div className="input-group">
                             <input
                                 placeholder="Nome do produto"
