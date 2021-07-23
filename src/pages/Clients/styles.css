@@ -1,0 +1,50 @@
+.register-container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.register-container .content {
+  width: 100%;
+  padding: 96px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.register-container .content > div h1 {
+  font-size: 40px;
+}
+.register-container .content > div h1 span {
+  color: red;
+}
+.register-container .content form {
+  width: 100%;
+  max-width: 450px;
+}
+.register-container .content form .input-group {
+  display: flex;
+}
+.table {
+  width: 100%;
+  padding-top: 30px;
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.table table td,
+th {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  text-align: left;
+  padding: 8px;
+}
