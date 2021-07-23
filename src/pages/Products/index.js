@@ -29,7 +29,6 @@ export default function Products() {
         const newClient = JSON.stringify([...product || [], data]);
         localStorage.setItem('clients', newClient);
         alert(`Produto cadastrado com sucesso!`);
-        window.location.reload();
 
     }
 
