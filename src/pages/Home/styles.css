@@ -1,19 +1,29 @@
 .home-container {
   width: 100%;
-  max-width: 1180px;
-  padding: 25px 0;
   margin: auto;
+  position: absolute;
+}
+.home-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e02041;
+  padding: 5px 0;
 }
 .home-container header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 900px;
+}
+.home-container h2 {
+  color: #fff;
 }
 .nav-link a{
+  color: #fff;
   padding: 10px;
 }
 .baner {
-  height: 300px;
+  height: 400px;
   background: #1A1D33;
   margin-bottom: 30px;
 }
@@ -23,7 +33,7 @@
   text-align: center;
 }
 .baner div h1{
-  padding-top: 90px;
+  padding-top: 130px;
   padding-bottom: 20px;
 }
 .baner div h1, p {
@@ -34,5 +44,5 @@
   font-size: 20px;
 }
 .baner p span {
-  color: red;
+  color: #e02041;
 }

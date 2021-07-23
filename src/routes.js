@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import Clients from "./pages/Clients";
 import Produtos from "./pages/Products";
+import Footer from "./pages/Footer"
 
 export default function Routes() {
     return (
@@ -17,6 +18,7 @@ export default function Routes() {
                     <Produtos />
                 </Route>
             </Switch>
+            <Footer />
         </BrowserRouter>
     )
 }

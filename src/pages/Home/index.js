@@ -7,6 +7,7 @@ export default function index() {
     return (
         <>
             <div className="home-container">
+                <div>
                 <header>
                     <h2>Home</h2>
                     <div className="nav-link">
@@ -18,6 +19,7 @@ export default function index() {
                         </Link>
                     </div>
                 </header>
+                </div>
             </div>
             <div className="baner">
                 <div>
