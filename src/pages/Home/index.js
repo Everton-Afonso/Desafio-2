@@ -14,7 +14,7 @@ export default function index() {
                         <Link to="/">
                             Clientes
                         </Link>
-                        <Link to="/products">
+                        <Link on to="/products">
                             Produtos
                         </Link>
                     </div>
