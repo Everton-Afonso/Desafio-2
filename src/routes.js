@@ -11,12 +11,8 @@ export default function Routes() {
         <BrowserRouter>
             <Home />
             <Switch>
-                <Route exact path="/">
-                    <Clients />
-                </Route>
-                <Route exact path="/products">
-                    <Products />
-                </Route>
+                <Route path="/" exact component={Clients} />
+                <Route exact path="/products" component={Products} />
             </Switch>
             <Footer />
         </BrowserRouter>
