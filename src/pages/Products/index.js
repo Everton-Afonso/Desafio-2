@@ -28,7 +28,7 @@ export default function Products() {
 
         const newProducts = JSON.stringify([...product || [], data]);
         localStorage.setItem('products', newProducts);
-        alert(`Cliente cadastrado com sucesso!`);
+        alert(`Produto cadastrado com sucesso!`);
         window.location.reload();
 
     }
