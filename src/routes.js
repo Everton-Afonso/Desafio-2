@@ -14,7 +14,7 @@ export default function Routes() {
                 <Route exact path="/">
                     <Clients />
                 </Route>
-                <Route exact path="/products">
+                <Route exact path="products">
                     <Products />
                 </Route>
             </Switch>
